@@ -59,7 +59,7 @@ jobs:
 
   rdp:
     needs: setup
-    runs-on: self-hosted
+    runs-on: windows-latest
     strategy:
       matrix: ${{ fromJson(needs.setup.outputs.matrix) }}
       max-parallel: 10
